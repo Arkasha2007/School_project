@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="margin-left: 950px; margin-top: 70px;">
+    <h1>Пароль введён неправильно!</h1>
+</div>
+<style>
+body {
+  background-color: #FAEBD7;
+}
+</style>
+<div style="margin-left: 1100px; margin-top: 70px;">
+    <form action="http://127.0.0.1:5000/">
+        <input style="width: 200px; height: 65px; background-color: lightblue;" class="btn-danger" type="submit" value="Перейти страницу входа">
+    </form>
+</div>
+{% endblock %}

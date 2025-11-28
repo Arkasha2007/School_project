@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+body {
+  background-color: #FAEBD7;
+}
+</style>
+<div style="margin-left: 950px; margin-top: 70px;">
+    <h1>Добро пожаловать в наш онлайн-магазин</h1>
+</div>
+<div style="margin-left: 910px; margin-top: 70px;">
+    <h3>Вам необходимо войти, чтобы получать скидки за купленные товары</h3>
+</div>
+<div align="center">
+    <form action="/products" method="post">
+        <div style="margin-top: 30px;">
+            <input type="text" size="40" id="name" name="name" placeholder="Введите ваше имя: ">
+        </div>
+        <div class="last_name" style="margin-top: 30px;">
+            <input type="text" size="40" id="surname" name="surname" placeholder="Введите вашу фамилию: ">
+        </div>
+        <div class="last_name" style="margin-top: 30px;">
+            <input type="password" size="40" id="password" name="password" placeholder="Введите ваш пароль: ">
+        </div>
+        <div class="last_name_button" style="margin-top: 30px;">
+            <button type="submit" class="btn btn-primary">Войти / Зарегистрироваться</button>
+        </div>
+
+    </form>
+</div>
+{% endblock %}
